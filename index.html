@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8" />
 
   <meta
@@ -18,7 +16,6 @@
   <title>Natural Records — For Independent Artists</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-
   <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
@@ -30,25 +27,21 @@
     rel="stylesheet"
   />
 
-  <link
-    rel="stylesheet"
-    href="styles.css"
-  />
-
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 
 <body>
 
-  <div
-    class="grain"
-    aria-hidden="true"
-  ></div>
+  <!-- =========================
+       GRAIN
+       ========================= -->
+
+  <div class="grain" aria-hidden="true"></div>
 
 
-  <!-- =====================================================
+  <!-- =========================
        HEADER
-       ===================================================== -->
+       ========================= -->
 
   <header class="site-header">
 
@@ -57,13 +50,9 @@
       href="#top"
       aria-label="Natural Records home"
     >
-
       <span class="brand-mark">NR</span>
-
       <span>Natural Records</span>
-
     </a>
-
 
     <nav aria-label="Main navigation">
 
@@ -75,17 +64,18 @@
 
       <a href="#support">Support</a>
 
+      <a href="#merch" class="future-link">Merch</a>
+
     </nav>
 
   </header>
 
 
+  <!-- =========================
+       HERO / HOME
+       ========================= -->
+
   <main id="top">
-
-
-    <!-- =====================================================
-         HOMEPAGE / HERO
-         ===================================================== -->
 
     <section class="hero">
 
@@ -109,14 +99,14 @@
         <div class="hero-actions">
 
           <a
-            class="button button-primary"
+            class="button button-dark"
             href="#artists"
           >
             Discover Artists
           </a>
 
           <a
-            class="button button-secondary"
+            class="text-link"
             href="#about"
           >
             About Natural Records
@@ -126,138 +116,43 @@
 
       </div>
 
-    </section>
+      <div class="hero-art" aria-hidden="true">
 
-
-    <!-- =====================================================
-         EMAIL SIGNUP
-         DIRECTLY UNDER HOMEPAGE
-         ===================================================== -->
-
-    <section
-      id="newsletter"
-      class="newsletter"
-    >
-
-      <div class="newsletter-inner">
-
-        <p class="eyebrow">
-          STAY IN THE LOOP
-        </p>
-
-        <h2>
-          New music.<br />
-          No spam.
-        </h2>
-
-        <p class="newsletter-description">
-          Get notified when new music, releases and Natural Records
-          updates drop.
-        </p>
-
-
-        <!-- MAILCHIMP -->
-
-        <div id="mc_embed_signup">
-
-          <form
-            action="https://app.us16.list-manage.com/subscribe/post?u=34ab24e3bc3042bd196a59fde&amp;id=a46bb9e78f&amp;f_id=00e8c2e1f0"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            class="validate"
-            target="_blank"
-          >
-
-            <div id="mc_embed_signup_scroll">
-
-
-              <div class="mc-field-group">
-
-                <label for="mce-EMAIL">
-                  Email Address
-                </label>
-
-                <input
-                  type="email"
-                  name="EMAIL"
-                  class="required email"
-                  id="mce-EMAIL"
-                  required
-                  placeholder="Your email address"
-                  autocomplete="email"
-                />
-
-              </div>
-
-
-              <div
-                id="mce-responses"
-                class="clear foot"
-              >
-
-                <div
-                  class="response"
-                  id="mce-error-response"
-                  style="display:none"
-                ></div>
-
-                <div
-                  class="response"
-                  id="mce-success-response"
-                  style="display:none"
-                ></div>
-
-              </div>
-
-
-              <!-- Mailchimp bot protection -->
-
-              <div
-                aria-hidden="true"
-                style="position:absolute; left:-5000px;"
-              >
-
-                <input
-                  type="text"
-                  name="b_34ab24e3bc3042bd196a59fde_a46bb9e78f"
-                  tabindex="-1"
-                  value=""
-                />
-
-              </div>
-
-
-              <div class="optionalParent">
-
-                <div class="clear foot">
-
-                  <input
-                    type="submit"
-                    name="subscribe"
-                    id="mc-embedded-subscribe"
-                    class="button"
-                    value="Subscribe"
-                  />
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </form>
-
+        <div class="hero-circle">
+          <span>NR</span>
         </div>
+
+        <span class="scribble scribble-one">
+          naturally.
+        </span>
+
+        <span class="scribble scribble-two">
+          independent
+        </span>
 
       </div>
 
     </section>
 
 
-    <!-- =====================================================
+    <!-- =========================
+         TICKER
+         ========================= -->
+
+    <div class="ticker">
+
+      <span>INDEPENDENT</span>
+      <span>HONEST</span>
+      <span>ORIGINAL</span>
+      <span>LOCAL</span>
+      <span>NATURAL RECORDS</span>
+
+    </div>
+
+
+    <!-- =========================
          ABOUT
-         ===================================================== -->
+         ========================= -->
 
     <section
       id="about"
@@ -272,7 +167,6 @@
 
       </div>
 
-
       <div class="about-grid">
 
         <div>
@@ -283,7 +177,6 @@
           </h2>
 
         </div>
-
 
         <div class="about-copy">
 
@@ -305,13 +198,13 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- =========================
          ARTISTS
-         ===================================================== -->
+         ========================= -->
 
     <section
       id="artists"
-      class="section"
+      class="section artists"
     >
 
       <div class="section-heading">
@@ -321,17 +214,22 @@
         </p>
 
         <p>
-          Natural Records
+          Independent artists.
         </p>
 
       </div>
 
 
+      <!-- TEJAS SHARMA -->
+
       <article class="artist-card">
 
         <div class="artist-art">
 
-          <span>NR</span>
+          <img
+            src="assets/tejas.jpg"
+            alt="Tejas Sharma"
+          />
 
         </div>
 
@@ -339,16 +237,53 @@
         <div class="artist-info">
 
           <p class="eyebrow">
-            NATURAL RECORDS
+            NATURAL RECORDS · ARTIST
           </p>
 
           <h2>
-            More artists coming soon.
+            Tejas Sharma
           </h2>
 
-          <p>
-            New music, new voices, and new stories are on the way.
+          <p class="artist-genre">
+            Pop · Indie · Folk · Rock
           </p>
+
+          <p class="artist-description">
+            Singer-songwriter and independent artist creating
+            music across pop, indie, folk and rock.
+          </p>
+
+
+          <div class="artist-links">
+
+            <a
+              class="artist-link primary-link"
+              href="https://linktr.ee/tejassharma_music"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Music &amp; Links ↗
+            </a>
+
+            <a
+              class="artist-link"
+              href="https://www.instagram.com/tejassharma_music/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram ↗
+            </a>
+
+            <a
+              class="artist-link"
+              href="https://www.youtube.com/@TejasSharma_Music"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              YouTube ↗
+            </a>
+
+          </div>
 
         </div>
 
@@ -362,55 +297,90 @@
     </section>
 
 
-    <!-- =====================================================
-         FUTURE COMMUNITY
-         ===================================================== -->
+    <!-- =========================
+         NEWSLETTER
+         ========================= -->
 
     <section
-      id="community"
-      class="section community"
+      id="newsletter"
+      class="section newsletter"
     >
 
-      <div class="community-grid">
+      <div class="newsletter-card">
 
-        <div class="community-intro">
+        <div>
 
           <p class="eyebrow">
-            COMING LATER
+            STAY IN THE LOOP
           </p>
 
           <h2>
-            A place for people
-            <em>who love music.</em>
+            New music.
+            <br />
+            No spam.
           </h2>
-
-          <p>
-            Community posts, discussions, threads and chat
-            will eventually live here.
-          </p>
-
-          <p class="community-small">
-            Artist and listener accounts will also be introduced
-            in a future version of Natural Records.
-          </p>
 
         </div>
 
 
-        <div class="community-panel">
-
-          <p class="section-label">
-            COMMUNITY
-          </p>
-
-          <h3>
-            Coming soon.
-          </h3>
+        <div>
 
           <p>
-            We're building a proper space for artists
-            and listeners to connect.
+            Get notified when new music, releases and
+            Natural Records updates drop.
           </p>
+
+
+          <!-- MAILCHIMP -->
+
+          <form
+            action="https://app.us16.list-manage.com/subscribe/post?u=34ab24e3bc3042bd196a59fde&amp;id=a46bb9e78f&amp;f_id=00e8c2e1f0"
+            method="post"
+            target="_blank"
+            class="signup-form"
+          >
+
+            <label
+              for="mce-EMAIL"
+              class="sr-only"
+            >
+              Email address
+            </label>
+
+            <input
+              type="email"
+              name="EMAIL"
+              id="mce-EMAIL"
+              placeholder="Your email address"
+              autocomplete="email"
+              required
+            />
+
+
+            <!-- Mailchimp bot protection -->
+
+            <div
+              aria-hidden="true"
+              class="mailchimp-honeypot"
+            >
+              <input
+                type="text"
+                name="b_34ab24e3bc3042bd196a59fde_a46bb9e78f"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+
+
+            <button type="submit">
+              Subscribe
+            </button>
+
+            <p class="form-note">
+              New releases, music and occasional Natural Records news.
+            </p>
+
+          </form>
 
         </div>
 
@@ -419,9 +389,9 @@
     </section>
 
 
-    <!-- =====================================================
+    <!-- =========================
          SUPPORT
-         ===================================================== -->
+         ========================= -->
 
     <section
       id="support"
@@ -447,70 +417,90 @@
             <em>Keep it alive.</em>
           </h2>
 
+          <p class="support-copy">
+            Independent music grows because people choose to
+            listen to it, share it, talk about it, and come back
+            for the next release.
+          </p>
+
         </div>
 
 
         <div class="support-actions">
 
-          <div class="support-tile">
+          <a
+            class="support-tile"
+            href="#newsletter"
+          >
 
-            <div class="tile-icon">
-              ♪
-            </div>
+            <span class="tile-icon">
+              ♫
+            </span>
 
-            <div>
-
+            <span>
               <strong>
-                Listen to the music
+                Follow Natural Records
               </strong>
 
               <small>
-                Coming with releases
+                Get new releases
               </small>
+            </span>
 
-            </div>
+            <span>
+              →
+            </span>
 
-          </div>
-
-
-          <div class="support-tile">
-
-            <div class="tile-icon">
-              ↗
-            </div>
-
-            <div>
-
-              <strong>
-                Share an artist
-              </strong>
-
-              <small>
-                Help independent music travel
-              </small>
-
-            </div>
-
-          </div>
+          </a>
 
 
-          <div class="support-tile">
+          <a
+            class="support-tile"
+            href="#artists"
+          >
 
-            <div class="tile-icon">
+            <span class="tile-icon">
               ♡
-            </div>
+            </span>
 
-            <div>
-
+            <span>
               <strong>
-                Support Natural Records
+                Support the artists
               </strong>
 
               <small>
-                More options coming later
+                Listen &amp; share
               </small>
+            </span>
 
-            </div>
+            <span>
+              →
+            </span>
+
+          </a>
+
+
+          <!-- MONEY SUPPORT PLACEHOLDER -->
+
+          <div class="support-tile coming-soon">
+
+            <span class="tile-icon">
+              ₹
+            </span>
+
+            <span>
+              <strong>
+                Support financially
+              </strong>
+
+              <small>
+                Coming soon
+              </small>
+            </span>
+
+            <span>
+              •••
+            </span>
 
           </div>
 
@@ -520,16 +510,50 @@
 
     </section>
 
+
+    <!-- =========================
+         MERCH — FUTURE
+         ========================= -->
+
+    <section
+      id="merch"
+      class="section future-section"
+    >
+
+      <div>
+
+        <p class="section-label">
+          NATURAL RECORDS STORE
+        </p>
+
+        <h2>
+          Merch is
+          <em>coming.</em>
+        </h2>
+
+        <p>
+          Music first. Merch later.
+        </p>
+
+      </div>
+
+    </section>
+
+
   </main>
 
 
-  <!-- =====================================================
+  <!-- =========================
        FOOTER
-       ===================================================== -->
+       ========================= -->
 
   <footer class="footer">
 
     <div class="footer-brand">
+
+      <div class="footer-logo">
+        NR
+      </div>
 
       <div>
 
@@ -574,34 +598,7 @@
   </footer>
 
 
-  <!-- =====================================================
-       MAILCHIMP VALIDATION
-       ===================================================== -->
-
-  <script
-    type="text/javascript"
-    src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-  ></script>
-
-  <script type="text/javascript">
-
-    (function($) {
-
-      window.fnames = new Array();
-      window.ftypes = new Array();
-
-      fnames[0] = "EMAIL";
-      ftypes[0] = "email";
-
-      var $mcj = jQuery.noConflict(true);
-
-    })(jQuery);
-
-  </script>
-
-
   <script src="script.js"></script>
 
 </body>
-
 </html>
