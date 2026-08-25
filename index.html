@@ -2,209 +2,637 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Natural Records — independent music, for independent artists." />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Natural Records — independent music, independent artists, naturally."
+  />
+
   <title>Natural Records — For Independent Artists</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* =========================================================
+       MAILCHIMP NEWSLETTER
+       ========================================================= */
+
+    .newsletter-section {
+      padding: 100px 24px;
+    }
+
+    .newsletter-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .newsletter-card {
+      padding: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.035);
+      text-align: center;
+    }
+
+    .newsletter-card h2 {
+      margin: 0 0 12px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+
+    .newsletter-card > p {
+      max-width: 600px;
+      margin: 0 auto 32px;
+      opacity: 0.72;
+      line-height: 1.7;
+    }
+
+    /* Mailchimp container */
+
+    #mc_embed_signup {
+      width: 100% !important;
+      max-width: 620px;
+      margin: 0 auto;
+      background: transparent !important;
+      font-family: "DM Sans", sans-serif !important;
+      color: inherit !important;
+    }
+
+    #mc_embed_signup form {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    #mc_embed_signup h2 {
+      display: none;
+    }
+
+    #mc_embed_signup .indicates-required {
+      display: none;
+    }
+
+    #mc_embed_signup .mc-field-group {
+      width: 100% !important;
+      padding-bottom: 0 !important;
+    }
+
+    #mc_embed_signup .mc-field-group label {
+      display: none;
+    }
+
+    #mc_embed_signup input[type="email"] {
+      width: 100% !important;
+      height: 56px;
+      box-sizing: border-box;
+      padding: 0 18px !important;
+      border-radius: 12px !important;
+      border: 1px solid rgba(255,255,255,0.18) !important;
+      background: rgba(255,255,255,0.07) !important;
+      color: #fff !important;
+      font-family: "DM Sans", sans-serif !important;
+      font-size: 16px !important;
+      outline: none;
+    }
+
+    #mc_embed_signup input[type="email"]:focus {
+      border-color: rgba(255,255,255,0.5) !important;
+    }
+
+    #mc_embed_signup input[type="email"]::placeholder {
+      color: rgba(255,255,255,0.55);
+    }
+
+    #mc_embed_signup .optionalParent {
+      margin-top: 14px;
+    }
+
+    #mc_embed_signup input[type="submit"] {
+      width: 100% !important;
+      height: 54px;
+      border: 0 !important;
+      border-radius: 12px !important;
+      cursor: pointer;
+      font-family: "DM Sans", sans-serif !important;
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    #mc_embed_signup input[type="submit"]:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    /* Hide Mailchimp branding for now.
+       The subscription functionality remains intact. */
+
+    #mc_embed_signup .refferal_badge {
+      display: none !important;
+    }
+
+    #mc_embed_signup .foot p {
+      display: none !important;
+    }
+
+    #mce-responses {
+      margin-top: 15px;
+    }
+
+    #mce-error-response,
+    #mce-success-response {
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    /* Mailchimp honeypot — KEEP THIS.
+       It helps prevent bot signups. */
+
+    #mc_embed_signup .hidden-fields {
+      position: absolute;
+      left: -5000px;
+    }
+
+    /* =========================================================
+       FUTURE FEATURES
+       ========================================================= */
+
+    .future-feature {
+      opacity: 0.55;
+      pointer-events: none;
+    }
+
+    /* =========================================================
+       MOBILE
+       ========================================================= */
+
+    @media (max-width: 700px) {
+      .newsletter-section {
+        padding: 70px 18px;
+      }
+
+      .newsletter-card {
+        padding: 32px 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- =======================================================
+       BACKGROUND
+       ======================================================== -->
+
   <div class="grain" aria-hidden="true"></div>
 
+
+  <!-- =======================================================
+       HEADER
+       ======================================================== -->
+
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Natural Records home">
+
+    <a
+      class="brand"
+      href="#top"
+      aria-label="Natural Records home"
+    >
       <span class="brand-mark">NR</span>
       <span>Natural Records</span>
     </a>
+
     <nav aria-label="Main navigation">
+
       <a href="#about">About</a>
+
       <a href="#artists">Artists</a>
-      <a href="#community">Community</a>
+
+      <!-- Future community feature -->
+      <a href="#community" class="future-feature">
+        Community
+      </a>
+
       <a href="#newsletter">Updates</a>
+
       <a href="#support">Support</a>
+
     </nav>
-    <a class="header-cta" href="#newsletter">Join us</a>
+
+    <!--
+      LOGIN / SIGN UP INTENTIONALLY REMOVED.
+
+      We will build proper Artist and Listener accounts later.
+    -->
+
   </header>
 
+
+  <!-- =======================================================
+       HERO
+       ======================================================== -->
+
   <main id="top">
+
     <section class="hero">
+
       <div class="hero-copy">
-        <p class="eyebrow">INDEPENDENT MUSIC · NATURALLY</p>
-        <h1>Music should have<br><em>room to grow.</em></h1>
-        <p class="hero-text">Natural Records is an independent music label built to help artists release, share and grow their music without the usual barriers.</p>
+
+        <p class="eyebrow">
+          INDEPENDENT MUSIC · NATURALLY
+        </p>
+
+        <h1>
+          Music should
+          <em>feel</em>
+          like something.
+        </h1>
+
+        <p class="hero-description">
+          Natural Records is an independent music label built
+          around artists, honest music, and stories worth hearing.
+        </p>
+
         <div class="hero-actions">
-          <a class="button button-dark" href="#artists">Meet the artist <span>↘</span></a>
-          <a class="text-link" href="#about">What we do</a>
-        </div>
-      </div>
-      <div class="hero-art">
-        <div class="stamp-wrap">
-          <img src="assets/natural-records-stamp.png" alt="Natural Records globe wearing headphones stamp logo" />
-        </div>
-        <span class="scribble scribble-one">made independently</span>
-        <span class="scribble scribble-two">✦</span>
-      </div>
-    </section>
 
-    <section class="ticker" aria-label="Natural Records statement">
-      <div>INDEPENDENT ARTISTS</div><span>✦</span><div>ORIGINAL MUSIC</div><span>✦</span><div>NO GATEKEEPING</div><span>✦</span><div>KEEP CREATING</div>
-    </section>
-
-    <section class="section about" id="about">
-      <div class="section-label">01 / ABOUT</div>
-      <div class="about-grid">
-        <h2>A small label with a simple idea.</h2>
-        <div class="about-copy">
-          <p>Natural Records exists to give independent artists a place to put their music out into the world.</p>
-          <p>We care about good songs, honest art and giving creators a fair shot — without making everything feel like a business transaction.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section newsletter" id="newsletter">
-      <div class="newsletter-card">
-        <div>
-          <p class="eyebrow">THE NATURAL LIST</p>
-          <h2>Hear it here first.</h2>
-          <p>New releases, artist news and the occasional thing worth hearing. No inbox spam.</p>
-        </div>
-        <form id="newsletter-form" class="signup-form" method="post" action="" novalidate>
-          <label class="sr-only" for="email">Email address</label>
-          <input id="email" name="EMAIL" type="email" placeholder="your@email.com" autocomplete="email" required />
-          <button type="submit">Join the list <span>→</span></button>
-          <p class="form-note">Unsubscribe anytime. Your address goes to our Natural Records mailing list.</p>
-          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-
-    <section class="section artists" id="artists">
-      <div class="section-heading">
-        <div class="section-label">02 / ARTISTS</div>
-        <p>One artist today. More voices tomorrow.</p>
-      </div>
-      <div class="artist-card">
-        <div class="artist-art" aria-hidden="true">
-          <span>TS</span>
-        </div>
-        <div class="artist-info">
-          <p class="eyebrow">NATURAL RECORDS ARTIST</p>
-          <h2>Tejas Sharma</h2>
-          <p>Independent musician, songwriter & producer.</p>
-          <a class="button button-outline" href="https://linktr.ee/tejassharma_music" target="_blank" rel="noopener noreferrer">Explore Tejas <span>↗</span></a>
-        </div>
-        <div class="artist-number">01</div>
-      </div>
-    </section>
-
-    <section class="section community" id="community">
-      <div class="section-heading">
-        <div class="section-label">03 / COMMUNITY</div>
-        <p>A little corner for people who love independent music.</p>
-      </div>
-
-      <div class="community-grid">
-        <div class="community-intro">
-          <p class="eyebrow">THE NATURAL COMMUNITY</p>
-          <h2>Talk music.<br><em>Share the love.</em></h2>
-          <p>Meet other listeners, talk about releases, share recommendations and hang out with the Natural Records community.</p>
-          <p class="community-small">Reading is open to everyone. You need an account to send messages.</p>
-        </div>
-
-        <div class="community-panel">
-          <div id="community-auth" class="community-auth">
-            <div class="community-auth-copy">
-              <p class="eyebrow">JOIN THE CONVERSATION</p>
-              <h3>Sign in to post.</h3>
-              <p>Create a free account with your email, then you can join the conversation.</p>
-            </div>
-            <div class="auth-tabs" role="tablist" aria-label="Community account">
-              <button class="auth-tab active" type="button" data-auth-mode="login">Log in</button>
-              <button class="auth-tab" type="button" data-auth-mode="signup">Sign up</button>
-            </div>
-            <form id="auth-form" class="auth-form">
-              <label for="auth-name" id="auth-name-label" class="auth-name-field hidden">Name</label>
-              <input id="auth-name" class="auth-name-field hidden" name="name" type="text" maxlength="60" placeholder="Your name" autocomplete="name" />
-              <label for="auth-email">Email</label>
-              <input id="auth-email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
-              <label for="auth-password">Password</label>
-              <input id="auth-password" name="password" type="password" minlength="6" placeholder="At least 6 characters" autocomplete="current-password" required />
-              <button class="button button-dark" type="submit" id="auth-submit">Log in <span>→</span></button>
-              <p id="auth-status" class="form-status" role="status" aria-live="polite"></p>
-            </form>
-          </div>
-
-          <div id="community-member" class="community-member hidden">
-            <div class="member-bar">
-              <div>
-                <p class="eyebrow">YOU'RE IN</p>
-                <h3>Welcome, <span id="member-name">friend</span>.</h3>
-              </div>
-              <button id="logout-button" class="small-button" type="button">Log out</button>
-            </div>
-            <form id="message-form" class="message-form">
-              <label for="message-body">Say something</label>
-              <textarea id="message-body" maxlength="1000" rows="4" placeholder="Talk about music, share a recommendation, say hi…" required></textarea>
-              <div class="message-actions">
-                <span id="message-count">0 / 1000</span>
-                <button class="button button-dark" type="submit">Post message <span>→</span></button>
-              </div>
-              <p id="message-status" class="form-status" role="status" aria-live="polite"></p>
-            </form>
-          </div>
-
-          <div class="community-feed-head">
-            <span>COMMUNITY FEED</span>
-            <button id="refresh-community" class="text-button" type="button">Refresh ↻</button>
-          </div>
-          <div id="community-feed" class="community-feed">
-            <p class="feed-empty">Loading the community…</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section support" id="support">
-      <div class="section-label">04 / SUPPORT</div>
-      <div class="support-grid">
-        <div>
-          <h2>Keep independent music moving.</h2>
-          <p>Some things are still growing. You can help us build them.</p>
-        </div>
-        <div class="support-actions">
-          <a class="support-tile" href="#" data-coming-soon>
-            <span class="tile-icon">♡</span>
-            <span><strong>Donate</strong><small>Coming soon</small></span>
-            <b>↗</b>
+          <a class="button button-primary" href="#artists">
+            Discover Artists
           </a>
-          <a class="support-tile" href="#" data-coming-soon>
-            <span class="tile-icon">✦</span>
-            <span><strong>Merch</strong><small>Coming soon</small></span>
-            <b>↗</b>
+
+          <a class="button button-secondary" href="#about">
+            About Natural Records
           </a>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- =====================================================
+         ABOUT
+         ====================================================== -->
+
+    <section id="about" class="content-section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          WHO WE ARE
+        </p>
+
+        <h2>
+          Made for people
+          <em>making things.</em>
+        </h2>
+
+      </div>
+
+      <div class="content-grid">
+
+        <div>
+          <p>
+            Natural Records exists to give independent artists
+            a place to release music without losing the personality
+            behind it.
+          </p>
+        </div>
+
+        <div>
+          <p>
+            No manufactured image. No unnecessary noise.
+            Just artists, music, and the people who want to hear it.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ARTISTS
+         ====================================================== -->
+
+    <section id="artists" class="content-section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          THE ROSTER
+        </p>
+
+        <h2>
+          Independent artists.
+        </h2>
+
+      </div>
+
+      <div class="artist-grid">
+
+        <!--
+          Artist cards can be added here later.
+
+          Eventually these will be dynamically generated
+          from the artist accounts/database.
+        -->
+
+        <article class="artist-card">
+
+          <div class="artist-card-image">
+            <span>NR</span>
+          </div>
+
+          <div class="artist-card-content">
+
+            <p class="artist-label">
+              NATURAL RECORDS
+            </p>
+
+            <h3>
+              More artists coming soon.
+            </h3>
+
+            <p>
+              New music, new voices, and new stories are on the way.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FUTURE COMMUNITY
+         ====================================================== -->
+
+    <section id="community" class="content-section future-feature">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          COMMUNITY
+        </p>
+
+        <h2>
+          A place for people
+          who love music.
+        </h2>
+
+      </div>
+
+      <p>
+        Community posts, discussions, threads and chat will live
+        here in a future version of Natural Records.
+      </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         MAILCHIMP NEWSLETTER
+         ====================================================== -->
+
+    <section
+      id="newsletter"
+      class="newsletter-section"
+    >
+
+      <div class="newsletter-inner">
+
+        <div class="newsletter-card">
+
+          <p class="eyebrow">
+            STAY IN THE LOOP
+          </p>
+
+          <h2>
+            New music.
+            <br />
+            No spam.
+          </h2>
+
+          <p>
+            Get notified when new music, releases and Natural Records
+            updates drop.
+          </p>
+
+
+          <!-- =================================================
+               MAILCHIMP EMBED
+
+               THIS IS THE ONLY EMAIL COLLECTION ON THE PAGE.
+               ================================================= -->
+
+          <div id="mc_embed_shell">
+
+            <div id="mc_embed_signup">
+
+              <form
+                action="https://app.us16.list-manage.com/subscribe/post?u=34ab24e3bc3042bd196a59fde&amp;id=a46bb9e78f&amp;f_id=00e8c2e1f0"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                class="validate"
+                target="_blank"
+              >
+
+                <div id="mc_embed_signup_scroll">
+
+                  <div class="mc-field-group">
+
+                    <label for="mce-EMAIL">
+                      Email Address
+                    </label>
+
+                    <input
+                      type="email"
+                      name="EMAIL"
+                      class="required email"
+                      id="mce-EMAIL"
+                      required
+                      placeholder="Your email address"
+                      autocomplete="email"
+                    />
+
+                  </div>
+
+
+                  <div
+                    id="mce-responses"
+                    class="clear foot"
+                  >
+
+                    <div
+                      class="response"
+                      id="mce-error-response"
+                      style="display:none"
+                    ></div>
+
+                    <div
+                      class="response"
+                      id="mce-success-response"
+                      style="display:none"
+                    ></div>
+
+                  </div>
+
+
+                  <!--
+                    MAILCHIMP BOT-PROTECTION HONEYPOT.
+                    DO NOT REMOVE.
+                  -->
+
+                  <div
+                    aria-hidden="true"
+                    style="position:absolute; left:-5000px;"
+                  >
+
+                    <input
+                      type="text"
+                      name="b_34ab24e3bc3042bd196a59fde_a46bb9e78f"
+                      tabindex="-1"
+                      value=""
+                    />
+
+                  </div>
+
+
+                  <div class="optionalParent">
+
+                    <div class="clear foot">
+
+                      <input
+                        type="submit"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        class="button"
+                        value="Subscribe"
+                      />
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </form>
+
+            </div>
+
+          </div>
+
+          <!-- End Mailchimp -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SUPPORT
+         ====================================================== -->
+
+    <section id="support" class="content-section">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          SUPPORT INDEPENDENT MUSIC
+        </p>
+
+        <h2>
+          Listen. Share.
+          <em>Keep it alive.</em>
+        </h2>
+
+      </div>
+
+      <p>
+        The easiest way to support an independent artist is to
+        listen to their music, share it with someone, and come back
+        for the next release.
+      </p>
+
+    </section>
+
   </main>
 
-  <footer class="footer">
-    <div class="footer-brand">
-      <img src="assets/natural-records-stamp.png" alt="" />
-      <div><strong>Natural Records</strong><span>For independent artists.</span></div>
+
+  <!-- =======================================================
+       FOOTER
+       ======================================================== -->
+
+  <footer class="site-footer">
+
+    <div>
+
+      <strong>
+        Natural Records
+      </strong>
+
+      <p>
+        Independent music. Naturally.
+      </p>
+
     </div>
-    <div class="footer-links">
-      <a href="#about">About</a>
-      <a href="#artists">Artists</a>
-      <a href="#community">Community</a>
-      <a href="#newsletter">Updates</a>
-      <a href="https://linktr.ee/tejassharma_music" target="_blank" rel="noopener noreferrer">Tejas</a>
+
+    <div>
+
+      <p>
+        © 2026 Natural Records
+      </p>
+
     </div>
-    <p>© 2026 Natural Records</p>
+
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- =======================================================
+       MAILCHIMP VALIDATION
+       ======================================================== -->
+
+  <script
+    type="text/javascript"
+    src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+  ></script>
+
+  <script type="text/javascript">
+    (function($) {
+
+      window.fnames = new Array();
+      window.ftypes = new Array();
+
+      fnames[0] = "EMAIL";
+      ftypes[0] = "email";
+
+      var $mcj = jQuery.noConflict(true);
+
+    })(jQuery);
+  </script>
+
+
+  <!-- Existing site JavaScript -->
   <script src="script.js"></script>
+
 </body>
 </html>
